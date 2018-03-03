@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:layout_height="match_parent" tools:context="com.agmcs.countdown.DateCalmFrag">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="从 "/>
+                <com.gc.materialdesign.views.ButtonFlat
+                    android:id="@+id/from_date"
+                    android:layout_width="wrap_content"
+                    android:text="2015年2月12日"
+                    android:layout_height="wrap_content">
+                    </com.gc.materialdesign.views.ButtonFlat>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="到 "/>
+                <com.gc.materialdesign.views.ButtonFlat
+                    android:layout_width="wrap_content"
+                    android:id="@+id/to_date"
+                    android:text="2015年2月12日"
+                    android:layout_height="wrap_content">
+                </com.gc.materialdesign.views.ButtonFlat>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:text="有"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#F06292"
+                    android:id="@+id/calm_result"
+                    android:text="0"/>
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="从 "/>
+                <com.gc.materialdesign.views.ButtonFlat
+                    android:id="@+id/add_sub_date"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:text="2015年2月12日"
+                    android:layout_height="wrap_content">
+                </com.gc.materialdesign.views.ButtonFlat>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text=" 开始"/>
+            </LinearLayout>
+            <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/days1"
+                android:gravity="center_horizontal"
+                android:layout_width="70dp"
+                android:maxLength="5"
+                android:inputType="number"
+                android:textColor="#F06292"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="天后是 "/>
+            <TextView
+                android:id="@+id/days1_result"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:textColor="#F06292"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/days2"
+                    android:layout_width="70dp"
+                    android:maxLength="5"
+                    android:gravity="center_horizontal"
+
+                    android:inputType="number"
+                    android:textColor="#F06292"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="天前是 "/>
+                <TextView
+                    android:id="@+id/days2_result"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:textColor="#F06292"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>
